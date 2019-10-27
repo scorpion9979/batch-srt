@@ -1,9 +1,9 @@
 #!/bin/bash
 OIFS="$IFS"
 IFS=$'\n'
-echo "Note: mkvextract is necessary for using this script"
+echo "Note: installing mkvtoolnix is necessary for using this script"
 read -p "Enter directory (use absolute path): " dir
-read -p "Enter mkvextract track no.: " track
+read -p "Enter subtitle track no. (from mkvinfo): " track
 for file in $(ls "$dir"/*)
 do
 	if [ ${file: -4} == ".mkv" ]
